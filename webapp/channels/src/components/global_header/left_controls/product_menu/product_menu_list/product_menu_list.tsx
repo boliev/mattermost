@@ -133,13 +133,13 @@ const ProductMenuList = (props: Props): JSX.Element | null => {
                         icon={<ApplicationCogIcon size={18}/>}
                     />
                 </SystemPermissionGate>
-                <Menu.ItemLink
+                {/* <Menu.ItemLink
                     id='integrations'
                     show={isMessaging && showIntegrations}
                     to={'/' + teamName + '/integrations'}
                     text={formatMessage({id: 'navbar_dropdown.integrations', defaultMessage: 'Integrations'})}
                     icon={<WebhookIncomingIcon size={18}/>}
-                />
+                /> */}
                 <Menu.ItemToggleModalRedux
                     id='userGroups'
                     modalId={ModalIdentifiers.USER_GROUPS}
@@ -191,7 +191,7 @@ const ProductMenuList = (props: Props): JSX.Element | null => {
                         />
                     )}
                 />
-                <TeamPermissionGate
+                {/* <TeamPermissionGate
                     teamId={teamId}
                     permissions={[Permissions.SYSCONSOLE_WRITE_PLUGINS]}
                 >
@@ -204,7 +204,7 @@ const ProductMenuList = (props: Props): JSX.Element | null => {
                         text={formatMessage({id: 'navbar_dropdown.marketplace', defaultMessage: 'App Marketplace'})}
                         icon={<ViewGridPlusOutlineIcon size={18}/>}
                     />
-                </TeamPermissionGate>
+                </TeamPermissionGate> */}
                 <Menu.ItemExternalLink
                     id='nativeAppLink'
                     show={appDownloadLink && !UserAgent.isMobileApp()}

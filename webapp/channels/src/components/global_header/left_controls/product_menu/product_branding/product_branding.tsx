@@ -31,7 +31,7 @@ const ProductBranding = (): JSX.Element => {
                 size={200}
                 margin='none'
             >
-                {currentProduct ? currentProduct.switcherText : 'Channels'}
+                Uzzy Chat
             </Heading>
         </ProductBrandingContainer>
     );

@@ -199,7 +199,7 @@ export default class AboutBuildModal extends React.PureComponent<Props, State> {
                         <FormattedMessage
                             id='about.title'
                             values={{
-                                appTitle: config.SiteName || 'Mattermost',
+                                appTitle: 'Uzzy Chat',
                             }}
                             defaultMessage='About {appTitle}'
                         />
@@ -213,7 +213,7 @@ export default class AboutBuildModal extends React.PureComponent<Props, State> {
                         <div>
                             <h3 className='about-modal__title'>
                                 <strong>
-                                    {'Mattermost'} {title}
+                                    {'Uzzy Chat'} {title}
                                 </strong>
                             </h3>
                             <p className='about-modal__subtitle pb-2'>

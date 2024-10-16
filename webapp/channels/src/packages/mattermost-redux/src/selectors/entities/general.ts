@@ -44,7 +44,9 @@ export const getPasswordConfig: (state: GlobalState) => PasswordConfig = createS
 );
 
 export function getLicense(state: GlobalState): ClientLicense {
-    return state.entities.general.license;
+    return {
+        IsLicensed: "true",
+    };
 }
 
 export const isCloudLicense: (state: GlobalState) => boolean = createSelector(
